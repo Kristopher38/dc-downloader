@@ -6,7 +6,7 @@ class DownloadepsSpider(scrapy.Spider):
 	name = 'downloadeps'
 	#allowed_domains = ['https://otakustream.tv']
 	custom_settings = {
-		'ITEM_PIPELINES': {'scrapy.pipelines.files.FilesPipeline': 1},
+		'ITEM_PIPELINES': {'detective_conan.pipelines.DetectiveConanPipeline': 1},
 		'FILES_STORE': 'C:\dc',
 		'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
 		'DOWNLOAD_TIMEOUT': 1800,

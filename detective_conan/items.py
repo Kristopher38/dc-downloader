@@ -11,4 +11,3 @@ class DCVideo(scrapy.Item):
 	file_urls = scrapy.Field()
 	files = scrapy.Field()
 	ep_id = scrapy.Field()
-	
